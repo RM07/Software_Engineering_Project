@@ -12,7 +12,7 @@ public class test {
 	public static Connection getConnection() throws Exception{
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
-			java.sql.Connection conn=DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/SE?useSSL=false","root","rohanmeena07@");
+			java.sql.Connection conn=DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/?useSSL=false","root","rohanmeena07@");
 			// Here use your own username and password
 			// Also make sure you have mySql install on your system
 			Statement stmt = null;
